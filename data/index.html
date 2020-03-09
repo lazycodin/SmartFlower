@@ -1,0 +1,1087 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    
+    <title>Welcome Smart Pot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <style>
+       
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:400,500,600,700');
+
+       
+        
+        img {
+            height: auto;
+            max-width: 100%;
+        }
+
+      
+      
+      
+        
+        /*************************
+    07. Text color
+*************************/
+        .text-white {
+            color: #fff;
+        }
+
+        .text-dark {
+            color: #1f223e;
+        }
+
+        /*************************
+    08. Input
+*************************/
+        ::-webkit-input-placeholder {
+            color: #606060;
+        }
+
+        :-moz-placeholder {
+            color: #606060;
+        }
+
+        ::-moz-placeholder {
+            color: #606060;
+        }
+
+        :-ms-input-placeholder {
+            color: #606060;
+        }
+
+        input {
+            background: #eceff8;
+            border: 2px solid #eceff8;
+            height: 45px;
+            box-shadow: none;
+            padding-left: 10px;
+            font-size: 14px;
+            color: #626262;
+            width: 100%;
+        }
+
+        select {
+            width: 100%;
+            background: #eceff8;
+            border: 2px solid #eceff8;
+            height: 45px;
+            padding-left: 10px;
+            box-shadow: none;
+            font-size: 14px;
+            color: #626262;
+        }
+
+        option {
+            background: #fff;
+            border: 0px solid #626262;
+            padding-left: 10px;
+            font-size: 14px;
+        }
+
+        input:focus {
+            background: transparent;
+            border: 2px solid #4FC1F0;
+        }
+
+        textarea {
+            resize: vertical;
+            background: #eceff8;
+            border: 2px solid #eceff8;
+            padding: 10px;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        textarea:focus {
+            background: transparent;
+            outline: none;
+        }
+
+        ::-moz-placeholder {
+            color: #444;
+            font-size: 13px;
+        }
+
+        .input-group.divcenter.input-group .form-control {
+            padding-left: 0px
+        }
+
+        /*************************
+    09. back-to-top
+*************************/
+        #scrollUp {
+            background: #666666 none repeat scroll 0 0;
+            bottom: 52px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 22px;
+            height: 35px;
+            position: fixed;
+            right: 50px;
+            text-align: center;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-transition: all 4ms linear 0s;
+            transition: all 4ms linear 0s;
+            width: 35px;
+            z-index: 9999;
+        }
+
+        #scrollUp i {
+            line-height: 32px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+
+        #scrollUp:hover i {
+            color: #000;
+        }
+
+        /*************************
+    10. Border Radius
+*************************/
+        .radius-1 {
+            border-radius: 1px
+        }
+
+        .radius-2 {
+            border-radius: 2px
+        }
+
+        .radius-3 {
+            border-radius: 3px
+        }
+
+        .radius-4 {
+            border-radius: 4px
+        }
+
+        .radius-5 {
+            border-radius: 5px
+        }
+
+        /*************************
+    11. Custom cloumn
+*************************/
+        .col-1,
+        .col-2,
+        .col-3,
+        .col-4,
+        .col-5,
+        .col-6,
+        .col-7,
+        .col-8,
+        .col-9,
+        .col-10 {
+            float: left;
+        }
+
+        .col-1 {
+            width: 10%;
+        }
+
+        .col-2 {
+            width: 20%;
+        }
+
+        .col-3 {
+            width: 30%;
+        }
+
+        .col-4 {
+            width: 40%;
+        }
+
+        .col-5 {
+            width: 50%;
+        }
+
+        .col-6 {
+            width: 60%;
+        }
+
+        .col-7 {
+            width: 70%;
+        }
+
+        .col-8 {
+            width: 80%;
+        }
+
+        .col-9 {
+            width: 90%;
+        }
+
+        .col-10 {
+            width: 100%;
+        }
+
+        /*************************************
+    12. Background variation set 
+**************************************/
+        /*colored background*/
+        .bg-white {
+            background: #fff;
+        }
+
+        .bg-blue {
+            background: #365A73
+        }
+
+        .bg-light {
+            background: #FAFAFA;
+        }
+
+        .bg-light-blue {
+            background: #4FC2C7
+        }
+
+        .bg-gray {
+            background: #F5F5F5;
+        }
+
+        .bg-violet {
+            background: #1F223E;
+        }
+
+        .bg-light-violet {
+            background: #2E3552;
+        }
+
+        .transparent-bg {
+            background: transparent;
+        }
+
+        .bg-lemon {
+            background: #95c41f none repeat scroll 0 0
+        }
+
+        .button.lemon {
+            background: #95c41f none repeat scroll 0 0;
+            border-color: #95c41f
+        }
+
+        .button.lemon:hover {
+            background: #1F223E;
+            border-color: #1F223E
+        }
+
+       
+
+        /*----------------------------------------*/
+        /*  02. Header Area
+/*----------------------------------------*/
+        .header-area {
+            position: absolute;
+            z-index: 99;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: auto;
+        }
+
+        .header-logo {
+            padding: 30px 0 25px
+        }
+
+        .menu-area i {
+            font-size: 30px;
+            color: #fff;
+            padding: 28px 0
+        }
+
+        .header-position {
+            left: 0;
+            position: absolute;
+            width: 100%;
+            z-index: 9;
+        }
+
+        .header-area {}
+
+        .logo {
+            margin-top: 30px;
+        }
+
+        .sticky .logo {
+            margin-top: 15px;
+        }
+
+        .logo a {}
+
+        .main-menu {}
+
+        .main-menu ul {}
+
+        .main-menu ul li {
+            display: inline-block;
+            margin-left: 30px;
+            padding: 32px 0;
+            position: relative;
+        }
+
+        .sticky .main-menu ul li {
+            padding: 18px 0
+        }
+
+        .sticky .menu-toggle {
+            margin-top: 22px
+        }
+
+        .main-menu ul li a {
+            color: #fff;
+            font-family: "Raleway", sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        .main-menu ul li a::before {
+            background: #fff none repeat scroll 0 0;
+            bottom: -8px;
+            content: "";
+            height: 2px;
+            position: absolute;
+            transform: scaleX(0);
+            transition: all 0.3s ease 0s;
+            width: 100%;
+        }
+
+        .main-menu ul li:hover a::before,
+        .main-menu ul li.active a::before {
+            transform: scaleX(1);
+        }
+
+
+
+
+        .main-menu ul li ul {
+            background: #fff none repeat scroll 0 0;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            text-align: left;
+            top: 100%;
+            transition: all 0.3s ease 0s;
+            visibility: hidden;
+            width: 190px;
+            z-index: 999;
+        }
+
+        .main-menu ul li:hover>ul {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .main-menu ul li ul li a {}
+
+        .main-menu ul li ul li {
+            display: block;
+            margin: 0;
+            padding: 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.03);
+            transition: all .3s ease 0s;
+        }
+
+        .main-menu ul li ul li:hover {
+            background-color: #f5f5f5;
+        }
+
+        .main-menu ul li ul li a {
+            display: block;
+            padding: 10px;
+            text-transform: capitalize;
+            color: #000;
+        }
+
+        .main-menu ul li ul li:first-child {
+            border-top: none;
+        }
+
+        .main-menu ul li ul li:hover>a {
+            padding-left: 15px
+        }
+
+        .main-menu ul li ul li a:before {
+            display: none
+        }
+
+        .main-menu ul li ul li>ul {
+            left: 100%;
+            margin-top: -1px;
+            opacity: 0;
+            position: absolute;
+            top: 45%;
+            visibility: hidden;
+        }
+
+        .main-menu ul li ul li:hover>ul {
+            top: 0;
+        }
+
+        .main-menu.text-right span {
+            float: right;
+        }
+
+        .mean-container .mean-bar {
+            background: transparent none repeat scroll 0 0;
+            min-height: 0;
+            padding: 0;
+        }
+
+        .mean-container a.meanmenu-reveal {
+            border: 1px solid #fff;
+            color: #fff;
+            margin-top: -35px;
+            padding: 4px 5px;
+            position: absolute;
+        }
+
+        .mean-container a.meanmenu-reveal span {
+            background-color: #fff;
+        }
+
+        .mean-container .mean-nav {
+            margin-top: 15px;
+        }
+
+        /**
+ * Note: I have omitted any vendor-prefixes for clarity.
+ * Adding them is left as an exercise for the reader.
+ */
+
+        /* stiky */
+        .header-sticky.sticky {
+            animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+            background: rgba(0, 0, 0, 0.8);
+            left: 0;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999999;
+            box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4);
+        }
+
+        /* intelligent-header */
+        .headroom {
+            will-change: transform;
+            transition: transform 200ms linear;
+        }
+
+        .headroom--pinned {
+            transform: translateY(0%);
+        }
+
+        .headroom--unpinned {
+            transform: translateY(-100%);
+        }
+
+        .intelligent-header {
+            background-color: #fff;
+            left: 0;
+            position: fixed;
+            width: 100%;
+            z-index: 999999;
+        }
+
+        .header-space {
+            height: 90px;
+        }
+
+        .intelligent-header.headroom--pinned {
+            transition: all 0.3s ease 0s;
+        }
+
+        .intelligent-header.headroom--not-top {
+            box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4);
+        }
+
+
+        /*----------------------------------------*/
+        /*  03. Slider Area
+/*----------------------------------------*/
+        .single-slide {
+            background-position: center center;
+            background-size: auto;
+        }
+
+        #slider-container {
+            background-color: #ffffff;
+            margin: 0;
+            overflow: hidden;
+            padding: 0;
+            position: relative;
+        }
+
+        .owl-item {
+            width: 34%
+        }
+
+        #slider-container .owl-wrapper-outer,
+        #slider-container .owl-wrapper,
+        #slider-container .owl-item {
+            height: 100%;
+            position: relative;
+            width: 100%;
+        }
+
+        .slider-content-area {
+            display: block;
+            height: 100%;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 9;
+        }
+
+        .slider-container {
+            display: block;
+            height: auto;
+            margin: 0;
+            overflow: hidden;
+            padding: 0;
+            position: relative;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .single-slider {
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .height-100vh {
+            height: 100vh;
+        }
+
+        .single-slide>a {
+            display: block;
+            position: relative;
+        }
+
+        .single-slide img {
+            width: 100%;
+            z-index: 1;
+        }
+
+        .corporate .single-slide img {
+            height: 100vh;
+        }
+
+        .dis-table {
+            display: table;
+            float: left;
+            height: 100%;
+            width: 100%;
+        }
+
+        .dis-table-cell {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        /* Slider Content Style */
+        .slider-content,
+        .home-banner-content,
+        .fixed-content {
+            position: relative;
+            z-index: 20;
+            margin-left: 6.9%;
+            width: 100%;
+        }
+
+        .slide-content h1,
+        .home-banner-content h1 {
+            font-size: 72px;
+            line-height: 72px;
+            position: relative;
+            font-weight: 700;
+            color: #fff;
+            z-index: 99;
+        }
+
+        .slide-content h3 {
+            font-size: 30px;
+            line-height: 30px;
+            padding-top: 28px;
+            margin-bottom: 30px;
+            position: relative;
+            font-weight: 400;
+            color: #fff;
+            z-index: 99;
+        }
+
+        .btn {
+            color: #111111;
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 8px 23px 9px;
+            z-index: 99;
+            position: relative;
+            background: #fff;
+            border-radius: 0;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            background: #111111;
+            color: #fff;
+        }
+
+        /* Default Slider Animations */
+        .owl-item.active .slide-content h3 {
+            -webkit-animation: fadeInUp 2000ms ease-in-out;
+            animation: fadeInUp 2000ms ease-in-out;
+        }
+
+        .owl-item.active .slide-content h1,
+        .home-banner-content h1 {
+            -webkit-animation: fadeInUp 1500ms ease-in-out;
+            animation: fadeInUp 1500ms ease-in-out;
+        }
+
+        .about-area .btn {
+            animation: inherit
+        }
+
+        .owl-dots {
+            margin-top: 5px;
+        }
+
+        .owl-carousel .owl-controls .owl-dots .owl-dot {
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid #ffffff;
+            display: inline-block;
+            height: 10px;
+            margin-right: 12px;
+            width: 36px;
+            z-index: 999;
+        }
+
+        .owl-carousel .owl-controls .owl-dots .owl-dot.active {
+            background-color: #ffffff;
+            border: 1px solid #ffffff;
+        }
+
+        #slider-container .owl-controls {
+            position: absolute;
+            bottom: 90px;
+            text-align: center;
+            left: 0;
+            right: 0;
+        }
+
+        
+        /* Large desktop :1920px. */
+        @media (min-width: 1501px) and (max-width: 2300px) {}
+
+
+
+        /* Normal desktop :992px. */
+        @media (min-width: 992px) and (max-width: 1200px) {
+
+            .container,
+            .wrapper.boxed-layout,
+            .wrapper.boxed-layout .sticky,
+            .wrapper.box-layout,
+            .wrapper.box-layout .sticky {
+                width: 970px
+            }
+
+            .mobile-menu-area {
+                display: block
+            }
+
+            .single-fun-factor {
+                padding: 0 0px
+            }
+
+            .touch-area form input:first-child,
+            .touch-area form input:nth-child(2) {
+                width: 46.5%
+            }
+
+            .main-menu ul li {
+                margin-left: 25px;
+            }
+
+            .single-slide {
+                height: auto;
+                padding: 350px 0;
+            }
+
+        }
+
+        /* Tablet desktop :768px. */
+        @media (min-width: 768px) and (max-width: 991px) {
+
+            .container,
+            .wrapper.boxed-layout,
+            .wrapper.box-layout {
+                width: 750px
+            }
+
+            .mobile-menu-area {
+                display: block
+            }
+
+            .wrapper.boxed-layout .sticky,
+            .wrapper.box-layout .sticky {
+                width: 750px;
+            }
+
+            .sticky {
+                position: inherit;
+            }
+
+            .sticky .logo img {
+                width: auto;
+            }
+
+            .smasu {
+                padding: 60px 20px
+            }
+
+            .single-slide {
+                height: auto;
+                padding: 300px 0;
+            }
+
+            .single-fun-factor {
+                padding: 0;
+            }
+
+
+
+        }
+
+        /* small mobile :320px. */
+        @media (max-width: 767px) {
+
+            .container,
+            .wrapper.boxed-layout,
+            .wrapper.box-layout {
+                width: 300px
+            }
+
+            .mobile-menu-area {
+                display: block;
+            }
+
+            #sticky-header,
+            .wrapper.boxed-layout #sticky-header,
+            .wrapper.box-layout #sticky-header,
+            #sticky-header.fixed {
+                position: inherit;
+            }
+
+            #sticky-header,
+            #contact-form>input,
+            #contact-form>textarea {
+                width: 100%
+            }
+
+            .sticky .logo img {
+                width: auto;
+            }
+
+            .slide-content h1,
+            .home-banner-content h1 {
+                font-size: 35px;
+                line-height: 35px
+            }
+
+            .slide-content h3 {
+                font-size: 22px;
+                line-height: 22px
+            }
+
+            .single-fun-factor,
+            .single-member,
+            .single-blog {
+                margin-bottom: 50px
+            }
+
+            .footer-widget {
+                margin-bottom: 30px
+            }
+
+            .col-xs-12:last-child .single-member,
+            .col-md-4:last-child .single-blog,
+            .col-md-4:last-child .footer-widget {
+                margin-bottom: 0px
+            }
+
+            .portfolio-hover span {
+                font-size: 20px;
+                margin-top: -10px
+            }
+
+            .portfolio-menu button {
+                display: block;
+                width: 100%
+            }
+
+            .about-left p {
+                text-align: justify
+            }
+
+            #navigation {
+                background-color: #000;
+                border-bottom: 1px solid #e7e7e7;
+                border-top: 1px solid #e7e7e7;
+                display: none;
+                height: auto;
+                left: 0;
+                overflow: auto;
+                top: 62px;
+                width: 100%;
+            }
+
+            #topnav .navigation-menu {
+                float: none;
+                max-height: 400px;
+            }
+
+            .menu-area {
+                float: none;
+                position: relative;
+                top: -42px;
+                display: inherit;
+            }
+
+            .main-menu ul>li ul.submenu {
+                display: none;
+                list-style: outside none none;
+                margin: 0;
+                padding-left: 20px;
+                position: inherit;
+                width: 100%;
+            }
+
+            .main-menu ul>li ul.submenu.open {
+                display: block;
+                opacity: 1;
+                visibility: visible
+            }
+
+            .main-menu ul li {
+                display: block;
+                margin-bottom: 1px
+            }
+
+            .main-menu ul li ul.submenu.megamenu>li {
+                width: 100%
+            }
+
+            .main-menu ul li ul.submenu.megamenu {
+                white-space: inherit
+            }
+
+            .main-menu ul li a i {
+                float: right
+            }
+
+            .main-menu ul li ul.submenu.open {
+                background-color: #000;
+                top: 0px
+            }
+
+            .main-menu ul li:hover a,
+            .main-menu ul li ul.submenu li a,
+            .main-menu ul li ul.submenu li:hover>a,
+            .main-menu ul li ul.submenu.megamenu>li:hover>a {
+                color: #fff
+            }
+
+            #topnav .navbar-toggle {
+                border: 0 none;
+                cursor: pointer;
+                height: 40px;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                width: 40px;
+            }
+
+            #topnav .navbar-toggle .lines {
+                display: block;
+                height: 15px;
+                margin: 13px auto;
+                position: relative;
+                width: 25px;
+            }
+
+            #topnav .navbar-toggle span {
+                background-color: #fff;
+                display: block;
+                height: 1px;
+                margin-bottom: 5px;
+                transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+                width: 100%;
+            }
+
+            #topnav .navbar-toggle.open span {
+                position: absolute
+            }
+
+            #topnav .navbar-toggle span {
+                background-color: #191b1d
+            }
+
+            #topnav .navbar-toggle span:last-child {
+                margin-bottom: 0;
+                width: 75%;
+            }
+
+            #topnav .navbar-toggle.open span:nth-child(2) {
+                visibility: hidden
+            }
+
+            #topnav .navbar-toggle.open span:last-child {
+                top: 6px;
+                transform: rotate(-45deg);
+                width: 100%
+            }
+
+            #topnav .navbar-toggle.open span:first-child {
+                top: 6px;
+                transform: rotate(45deg)
+            }
+
+            .menu-item {
+                border: 1px solid #ddd;
+                float: right
+            }
+
+            .search-btn {
+                margin-right: 20px
+            }
+
+            .search {
+                top: 88px
+            }
+
+            .stick .search {
+                top: 53px
+            }
+
+            .animated-background .banner-content-area {
+                top: 35%
+            }
+
+            .smasu {
+                padding: 0 20px
+            }
+
+            .smasu {
+                padding: 60px 20px
+            }
+
+            .single-slide {
+                height: auto;
+                padding: 200px 0;
+            }
+
+            .grid-item {
+                width: 100%;
+            }
+
+            .single-fun-factor.none-mrg {
+                margin-bottom: 0px;
+            }
+        }
+
+        /* Large Mobile :480px. */
+        @media only screen and (min-width: 480px) and (max-width: 767px) {
+            .container {
+                width: 450px
+            }
+
+            .wrapper.boxed-layout,
+            .wrapper.box-layout {
+                width: 450px
+            }
+
+            .single-member>img,
+            .blog-img>img {
+                width: 100%
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!--Main Wrapper Start-->
+    <div class="wrapper bg-white fix">
+        <!--Bg White Start-->
+        <div class="bg-white">
+            <!--Header Area Start-->
+            <header class="header-area header-sticky">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-2 col-xs-12">
+                            <div class="logo">
+                                <a href="index.html"><img
+                                        src="https://src.guap.ru/Files/logos/full/suai-full-line_blue.png"
+                                        alt="logo" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- End of Header Area -->
+            <!-- Start Slider Area-->
+
+            <!-- Start Slingle Slide -->
+            <div class="single-slide height-100vh"
+                style="background-image: url(http://getwallpapers.com/wallpaper/full/7/3/d/679493.jpg)">
+                <!-- Start Slider Content -->
+                <div class="slider-content-area">
+                    <div class="dis-table">
+                        <div class="dis-table-cell text-center">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+
+                                        <div class="slide-content">
+                                            <h1>Welcome! </h1>
+                                            <h3>SUAI Smart Pot</h3>
+                                            <a href="cap_portal.html"
+                                                class="btn btn-cor btn-borders hidden-xs scroll-down">Config</a>
+                                            <a href="flower.html"
+                                                class="btn btn-cor btn-borders hidden-xs scroll-down">Main menu</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Start Slider Content -->
+            </div>
+
+</body>
+
+</html>
